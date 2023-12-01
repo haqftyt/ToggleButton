@@ -12,5 +12,19 @@
         <input type="checkbox" id="check">
         <label for="check" class="btn"></label>
     </div>
+
+    <script>
+        let container=document.querySelector('.container');
+        let btn=document.querySelector('.btn');
+        let checkbox=document.getElementById("check");
+        btn.onclick = function(){
+            if(checkbox.checked){
+                container.style.backgroundColor="#fff";
+            }
+            else{
+                container.style.backgroundColor="#000";
+            }
+        }
+    </script>
 </body>
 </html>
